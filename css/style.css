@@ -7,6 +7,8 @@
   body{
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
+      width: 80%;
+      margin: 0 auto;
   }
   
   header {
@@ -18,7 +20,9 @@
 
   .nav_left{
       float:left;
-      width: 50%;
+      width: 40%;
+      display:flex;
+      justify-content: flex-start;
       /*border-right: 1px solid black;*/
   }
 
@@ -34,15 +38,13 @@
 
   .nav_right{
     float: right;
-    width: 50%;
+    width: 60%;
     /*border-right: 1px solid black;*/
     display:flex;
     flex-direction: row;
 }
 
 .nav_right ul li {
-    
-    justify-content: flex-end;
     display:inline-block;
     margin-left: 20px;
 }
@@ -63,3 +65,42 @@
       padding: 15px 10px;
       border: none;
   }
+
+  .with-dropdown{ 
+      position:relative;
+  }
+
+  .dropdown-menu{
+      box-shadow: 0 0 15px rgb(87, 84, 84);
+      border-radius: 10px;
+      position: absolute; 
+      width: 150px; 
+      display: none;
+  }
+  
+  .dropdown-menu > ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu > ul > li  {
+    display: list-item;
+    
+    list-style: none;
+  }
+  
+  .dropdown-menu > ul > li > a{
+      margin-right: 10px;
+  }
+
+  .view-dropdown{
+      display: block;
+  }
+
+  .affiliate_news {
+      color:rgb(201, 60, 81);
+      font-size: small;
+      margin-top: 2px;
+  }
+  
+  
